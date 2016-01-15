@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E13485CEFC4EFE90260BFF7 /* Pods_InstaImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A14A4BD222A318808BC58A9 /* Pods_InstaImages.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B3E9C2381C493827007D7A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E9C2371C493827007D7A8F /* main.m */; };
 		B3E9C23B1C493827007D7A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E9C23A1C493827007D7A8F /* AppDelegate.m */; };
 		B3E9C23E1C493827007D7A8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E9C23D1C493827007D7A8F /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342145EE6143AFF5829A672E /* Pods-InstaImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaImages/Pods-InstaImages.release.xcconfig"; sourceTree = "<group>"; };
+		3A14A4BD222A318808BC58A9 /* Pods_InstaImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D68B19882166D8BBBED483 /* Pods-InstaImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaImages/Pods-InstaImages.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E9C2331C493827007D7A8F /* InstaImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E9C2371C493827007D7A8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3E9C2391C493827007D7A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E13485CEFC4EFE90260BFF7 /* Pods_InstaImages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B02EBCA59A4269B10760FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8D68B19882166D8BBBED483 /* Pods-InstaImages.debug.xcconfig */,
+				342145EE6143AFF5829A672E /* Pods-InstaImages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30AA1568F71CEC75334886A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A14A4BD222A318808BC58A9 /* Pods_InstaImages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3E9C22A1C493827007D7A8F = {
 			isa = PBXGroup;
 			children = (
 				B3E9C2351C493827007D7A8F /* InstaImages */,
 				B3E9C2341C493827007D7A8F /* Products */,
+				24B02EBCA59A4269B10760FF /* Pods */,
+				30AA1568F71CEC75334886A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3E9C24A1C493827007D7A8F /* Build configuration list for PBXNativeTarget "InstaImages" */;
 			buildPhases = (
+				3A693A06621E0591E733BBDC /* Check Pods Manifest.lock */,
 				B3E9C22F1C493827007D7A8F /* Sources */,
 				B3E9C2301C493827007D7A8F /* Frameworks */,
 				B3E9C2311C493827007D7A8F /* Resources */,
+				5CC6743557156DD2B6A23C0F /* Embed Pods Frameworks */,
+				D6F3E5022F1ABDEAD0E275CD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A693A06621E0591E733BBDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CC6743557156DD2B6A23C0F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaImages/Pods-InstaImages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F3E5022F1ABDEAD0E275CD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaImages/Pods-InstaImages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3E9C22F1C493827007D7A8F /* Sources */ = {
@@ -213,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -259,6 +334,7 @@
 		};
 		B3E9C24B1C493827007D7A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D68B19882166D8BBBED483 /* Pods-InstaImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaImages/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		B3E9C24C1C493827007D7A8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 342145EE6143AFF5829A672E /* Pods-InstaImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaImages/Info.plist;
@@ -298,6 +375,7 @@
 				B3E9C24C1C493827007D7A8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
