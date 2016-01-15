@@ -1,5 +1,6 @@
 # instaImages
-Simple image viewer for instagram
+Simple image viewer for instagram iOS: 8+
+
 
 Lazy load + кэширование для изображений.
 
