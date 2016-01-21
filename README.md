@@ -1,10 +1,17 @@
 # instaImages
 Simple image viewer for instagram iOS: 8+
 
+Features:
+Lazy load + image cache 
+Infitity scrolling + pull to refresh
+Error handling
+Verbose internet activity status
+
+#########################
+
+Простой клиент для просмотри изображений из инстаграмма 
 
 Lazy load + кэширование для изображений.
-
-Небольшой клиент для Instagram (https://instagram.com/developer/).
 
 Ниже перечислены фичи для реализации:
 
