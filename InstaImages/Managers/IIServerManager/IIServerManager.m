@@ -18,6 +18,13 @@ static NSString * const USER_RELATIONSHIP_URL_SUFFIX = @"users/%@/relationship?a
 static NSString * const USER_MEDIA_FOR_MAX_ID_URL_SUFFIX = @"users/%@/media/recent/?access_token=%@&max_id=%@";
 static NSString * const USER_MEDIA_FOR_MIN_ID_URL_SUFFIX = @"users/%@/media/recent/?access_token=%@&min_id=%@";
 
+@interface IIServerManager ()
+
+@property (strong, nonatomic, readonly) AFHTTPSessionManager * requestManager;
+
+@end
+
+
 @implementation IIServerManager
 
 + (instancetype)sharedManager{
@@ -25,15 +32,16 @@ static NSString * const USER_MEDIA_FOR_MIN_ID_URL_SUFFIX = @"users/%@/media/rece
     static IIServerManager *_sharedManager = nil;
     dispatch_once(&pred, ^{
         _sharedManager = [[IIServerManager alloc] init];
+        [_sharedManager initRequestManager];
     });
     return _sharedManager;
 }
 
-- (AFHTTPSessionManager *)requestManager {
+- (void)initRequestManager {
     AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
-    return manager;
+    _requestManager = manager;
 }
 
 - (NSString *)constructUrl:(NSString *)prefix {
@@ -73,7 +81,7 @@ static NSString * const USER_MEDIA_FOR_MIN_ID_URL_SUFFIX = @"users/%@/media/rece
 #pragma mark - httpMethods
 
 -(void)doGetRequestWithUrl:(NSString*)url parameters:(NSDictionary*)parameters completion:(void (^)(NSDictionary * response, NSError * error))completion {
-    [[self requestManager] GET:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.requestManager GET:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%s success %@", __func__, responseObject);
         completion(responseObject, nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -83,7 +91,7 @@ static NSString * const USER_MEDIA_FOR_MIN_ID_URL_SUFFIX = @"users/%@/media/rece
 }
 
 -(void)doPostRequestWithUrl:(NSString*)url parameters:(NSDictionary*)parameters completion:(void (^)(NSDictionary * response, NSError * error))completion {
-    [[self requestManager] POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.requestManager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%s success %@", __func__, responseObject);
         completion(responseObject, nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
