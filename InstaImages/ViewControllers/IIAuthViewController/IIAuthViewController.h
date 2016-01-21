@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IIAuthViewController.h
 //  InstaImages
 //
 //  Created by Gumo on 15/01/16.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IIBaseViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface IIAuthViewController : IIBaseViewController
 
 @end
-

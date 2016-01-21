@@ -8,11 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8E13485CEFC4EFE90260BFF7 /* Pods_InstaImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A14A4BD222A318808BC58A9 /* Pods_InstaImages.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B3E9C2381C493827007D7A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E9C2371C493827007D7A8F /* main.m */; };
+		B31024411C49490F00DCB9A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E9C2421C493827007D7A8F /* Assets.xcassets */; };
+		B3385F531C4EDEE30074B3F8 /* IIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3385F521C4EDEE30074B3F8 /* IIBaseViewController.m */; };
+		B3385F5D1C4EE6BD0074B3F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3385F5C1C4EE6BD0074B3F8 /* main.m */; };
+		B3385F601C4EE6C60074B3F8 /* IIError.m in Sources */ = {isa = PBXBuildFile; fileRef = B3385F5F1C4EE6C60074B3F8 /* IIError.m */; };
+		B3385F641C4EEE680074B3F8 /* IIUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3385F631C4EEE680074B3F8 /* IIUserModel.m */; };
+		B38B8D561C4F10070014FBD4 /* IIUserRelationshipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B38B8D551C4F10070014FBD4 /* IIUserRelationshipModel.m */; };
+		B3935A381C49520D00975C40 /* IIAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A371C49520D00975C40 /* IIAuthViewController.m */; };
+		B3935A3C1C4975B900975C40 /* IIGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A3B1C4975B900975C40 /* IIGalleryViewController.m */; };
+		B3935A481C498BDB00975C40 /* IIGalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A471C498BDB00975C40 /* IIGalleryCollectionViewCell.m */; };
+		B3935A4D1C4A652800975C40 /* IIMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A4C1C4A652800975C40 /* IIMediaModel.m */; };
+		B3935A501C4A6AA400975C40 /* IIServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A4F1C4A6AA400975C40 /* IIServerManager.m */; };
+		B3935A541C4A6AFA00975C40 /* IIModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A531C4A6AFA00975C40 /* IIModelManager.m */; };
+		B3935A581C4A6FA200975C40 /* IIMediaImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A571C4A6FA200975C40 /* IIMediaImagesModel.m */; };
+		B3935A601C4A70CC00975C40 /* IIMediaSingeImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A5F1C4A70CC00975C40 /* IIMediaSingeImageModel.m */; };
+		B3935A651C4A95FA00975C40 /* IIlnstagramFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3935A641C4A95FA00975C40 /* IIlnstagramFlowLayout.m */; };
+		B3AEB3C01C494D11002661A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AEB3BF1C494D11002661A4 /* Foundation.framework */; };
+		B3C110491C4DAEB800B145FA /* IIAutocompleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C110481C4DAEB800B145FA /* IIAutocompleteManager.m */; };
+		B3C1104D1C4DB34100B145FA /* IIUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C1104C1C4DB34100B145FA /* IIUserDefaultsManager.m */; };
 		B3E9C23B1C493827007D7A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E9C23A1C493827007D7A8F /* AppDelegate.m */; };
-		B3E9C23E1C493827007D7A8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E9C23D1C493827007D7A8F /* ViewController.m */; };
 		B3E9C2411C493827007D7A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9C23F1C493827007D7A8F /* Main.storyboard */; };
-		B3E9C2431C493827007D7A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E9C2421C493827007D7A8F /* Assets.xcassets */; };
 		B3E9C2461C493827007D7A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9C2441C493827007D7A8F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +35,41 @@
 		342145EE6143AFF5829A672E /* Pods-InstaImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaImages/Pods-InstaImages.release.xcconfig"; sourceTree = "<group>"; };
 		3A14A4BD222A318808BC58A9 /* Pods_InstaImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D68B19882166D8BBBED483 /* Pods-InstaImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaImages/Pods-InstaImages.debug.xcconfig"; sourceTree = "<group>"; };
+		B3385F511C4EDEE30074B3F8 /* IIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIBaseViewController.h; path = ViewControllers/IIBaseViewController/IIBaseViewController.h; sourceTree = "<group>"; };
+		B3385F521C4EDEE30074B3F8 /* IIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIBaseViewController.m; path = ViewControllers/IIBaseViewController/IIBaseViewController.m; sourceTree = "<group>"; };
+		B3385F5C1C4EE6BD0074B3F8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		B3385F5E1C4EE6C60074B3F8 /* IIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIError.h; path = "Supporting Files/IIError/IIError.h"; sourceTree = "<group>"; };
+		B3385F5F1C4EE6C60074B3F8 /* IIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIError.m; path = "Supporting Files/IIError/IIError.m"; sourceTree = "<group>"; };
+		B3385F621C4EEE680074B3F8 /* IIUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIUserModel.h; path = JsonModeles/IIUserModel/IIUserModel.h; sourceTree = "<group>"; };
+		B3385F631C4EEE680074B3F8 /* IIUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIUserModel.m; path = JsonModeles/IIUserModel/IIUserModel.m; sourceTree = "<group>"; };
+		B38B8D541C4F10070014FBD4 /* IIUserRelationshipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIUserRelationshipModel.h; path = JsonModeles/IIUserRelationshipModel/IIUserRelationshipModel.h; sourceTree = "<group>"; };
+		B38B8D551C4F10070014FBD4 /* IIUserRelationshipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIUserRelationshipModel.m; path = JsonModeles/IIUserRelationshipModel/IIUserRelationshipModel.m; sourceTree = "<group>"; };
+		B3935A361C49520D00975C40 /* IIAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIAuthViewController.h; path = ViewControllers/IIAuthViewController/IIAuthViewController.h; sourceTree = "<group>"; };
+		B3935A371C49520D00975C40 /* IIAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIAuthViewController.m; path = ViewControllers/IIAuthViewController/IIAuthViewController.m; sourceTree = "<group>"; };
+		B3935A3A1C4975B900975C40 /* IIGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIGalleryViewController.h; path = ViewControllers/IIGalleryViewController/IIGalleryViewController.h; sourceTree = "<group>"; };
+		B3935A3B1C4975B900975C40 /* IIGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIGalleryViewController.m; path = ViewControllers/IIGalleryViewController/IIGalleryViewController.m; sourceTree = "<group>"; };
+		B3935A461C498BDB00975C40 /* IIGalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIGalleryCollectionViewCell.h; path = Views/IIGalleryCollectionViewCell/IIGalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		B3935A471C498BDB00975C40 /* IIGalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIGalleryCollectionViewCell.m; path = Views/IIGalleryCollectionViewCell/IIGalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		B3935A4B1C4A652800975C40 /* IIMediaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIMediaModel.h; path = JsonModeles/IIMediaModeles/IIMediaModel.h; sourceTree = "<group>"; };
+		B3935A4C1C4A652800975C40 /* IIMediaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIMediaModel.m; path = JsonModeles/IIMediaModeles/IIMediaModel.m; sourceTree = "<group>"; };
+		B3935A4E1C4A6AA400975C40 /* IIServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIServerManager.h; path = Managers/IIServerManager/IIServerManager.h; sourceTree = "<group>"; };
+		B3935A4F1C4A6AA400975C40 /* IIServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIServerManager.m; path = Managers/IIServerManager/IIServerManager.m; sourceTree = "<group>"; };
+		B3935A521C4A6AFA00975C40 /* IIModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIModelManager.h; path = Managers/IIModelManager/IIModelManager.h; sourceTree = "<group>"; };
+		B3935A531C4A6AFA00975C40 /* IIModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIModelManager.m; path = Managers/IIModelManager/IIModelManager.m; sourceTree = "<group>"; };
+		B3935A561C4A6FA200975C40 /* IIMediaImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIMediaImagesModel.h; path = JsonModeles/IIMediaImagesModel/IIMediaImagesModel.h; sourceTree = "<group>"; };
+		B3935A571C4A6FA200975C40 /* IIMediaImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIMediaImagesModel.m; path = JsonModeles/IIMediaImagesModel/IIMediaImagesModel.m; sourceTree = "<group>"; };
+		B3935A5E1C4A70CC00975C40 /* IIMediaSingeImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIMediaSingeImageModel.h; path = JsonModeles/IIMediaSingeImageModel/IIMediaSingeImageModel.h; sourceTree = "<group>"; };
+		B3935A5F1C4A70CC00975C40 /* IIMediaSingeImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIMediaSingeImageModel.m; path = JsonModeles/IIMediaSingeImageModel/IIMediaSingeImageModel.m; sourceTree = "<group>"; };
+		B3935A631C4A95FA00975C40 /* IIlnstagramFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIlnstagramFlowLayout.h; path = Layouts/IIlnstagramFlowLayout/IIlnstagramFlowLayout.h; sourceTree = "<group>"; };
+		B3935A641C4A95FA00975C40 /* IIlnstagramFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIlnstagramFlowLayout.m; path = Layouts/IIlnstagramFlowLayout/IIlnstagramFlowLayout.m; sourceTree = "<group>"; };
+		B3AEB3BF1C494D11002661A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3C110471C4DAEB800B145FA /* IIAutocompleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIAutocompleteManager.h; path = Managers/IIAutocompleteManager/IIAutocompleteManager.h; sourceTree = "<group>"; };
+		B3C110481C4DAEB800B145FA /* IIAutocompleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIAutocompleteManager.m; path = Managers/IIAutocompleteManager/IIAutocompleteManager.m; sourceTree = "<group>"; };
+		B3C1104B1C4DB34100B145FA /* IIUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IIUserDefaultsManager.h; path = Managers/IIUserDefaultsManager/IIUserDefaultsManager.h; sourceTree = "<group>"; };
+		B3C1104C1C4DB34100B145FA /* IIUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IIUserDefaultsManager.m; path = Managers/IIUserDefaultsManager/IIUserDefaultsManager.m; sourceTree = "<group>"; };
 		B3E9C2331C493827007D7A8F /* InstaImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E9C2371C493827007D7A8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3E9C2391C493827007D7A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3E9C23A1C493827007D7A8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B3E9C23C1C493827007D7A8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B3E9C23D1C493827007D7A8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B3E9C2401C493827007D7A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3E9C2421C493827007D7A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E9C2451C493827007D7A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AEB3C01C494D11002661A4 /* Foundation.framework in Frameworks */,
 				8E13485CEFC4EFE90260BFF7 /* Pods_InstaImages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,9 +101,194 @@
 		30AA1568F71CEC75334886A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3AEB3BF1C494D11002661A4 /* Foundation.framework */,
 				3A14A4BD222A318808BC58A9 /* Pods_InstaImages.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31024341C49472000DCB9A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3385F501C4EDEC50074B3F8 /* IIBaseViewController */,
+				B3935A391C49758700975C40 /* IIGalleryViewController */,
+				B310243A1C49474F00DCB9A2 /* IIAuthViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B31024381C49473800DCB9A2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B3C1104A1C4DB32900B145FA /* IIUserDefaultsManager */,
+				B3C110461C4DAE9700B145FA /* IIAutocompleteManager */,
+				B3935A511C4A6AB500975C40 /* IIModelManager */,
+				B31024391C49474500DCB9A2 /* IIServerManager */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		B31024391C49474500DCB9A2 /* IIServerManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A4E1C4A6AA400975C40 /* IIServerManager.h */,
+				B3935A4F1C4A6AA400975C40 /* IIServerManager.m */,
+			);
+			name = IIServerManager;
+			sourceTree = "<group>";
+		};
+		B310243A1C49474F00DCB9A2 /* IIAuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A361C49520D00975C40 /* IIAuthViewController.h */,
+				B3935A371C49520D00975C40 /* IIAuthViewController.m */,
+			);
+			name = IIAuthViewController;
+			sourceTree = "<group>";
+		};
+		B3385F501C4EDEC50074B3F8 /* IIBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B3385F511C4EDEE30074B3F8 /* IIBaseViewController.h */,
+				B3385F521C4EDEE30074B3F8 /* IIBaseViewController.m */,
+			);
+			name = IIBaseViewController;
+			sourceTree = "<group>";
+		};
+		B3385F5B1C4EE65B0074B3F8 /* IIError */ = {
+			isa = PBXGroup;
+			children = (
+				B3385F5E1C4EE6C60074B3F8 /* IIError.h */,
+				B3385F5F1C4EE6C60074B3F8 /* IIError.m */,
+			);
+			name = IIError;
+			sourceTree = "<group>";
+		};
+		B3385F611C4EEE450074B3F8 /* IIUserModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3385F621C4EEE680074B3F8 /* IIUserModel.h */,
+				B3385F631C4EEE680074B3F8 /* IIUserModel.m */,
+			);
+			name = IIUserModel;
+			sourceTree = "<group>";
+		};
+		B38B8D571C4F10190014FBD4 /* IIUserRelationshipModel */ = {
+			isa = PBXGroup;
+			children = (
+				B38B8D541C4F10070014FBD4 /* IIUserRelationshipModel.h */,
+				B38B8D551C4F10070014FBD4 /* IIUserRelationshipModel.m */,
+			);
+			name = IIUserRelationshipModel;
+			sourceTree = "<group>";
+		};
+		B3935A391C49758700975C40 /* IIGalleryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A3A1C4975B900975C40 /* IIGalleryViewController.h */,
+				B3935A3B1C4975B900975C40 /* IIGalleryViewController.m */,
+			);
+			name = IIGalleryViewController;
+			sourceTree = "<group>";
+		};
+		B3935A3D1C497D0A00975C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A411C498B6E00975C40 /* IIGalleryCollectionViewCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B3935A411C498B6E00975C40 /* IIGalleryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A461C498BDB00975C40 /* IIGalleryCollectionViewCell.h */,
+				B3935A471C498BDB00975C40 /* IIGalleryCollectionViewCell.m */,
+			);
+			name = IIGalleryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B3935A491C4A64DC00975C40 /* JsonModeles */ = {
+			isa = PBXGroup;
+			children = (
+				B38B8D571C4F10190014FBD4 /* IIUserRelationshipModel */,
+				B3385F611C4EEE450074B3F8 /* IIUserModel */,
+				B3935A5D1C4A70A800975C40 /* IIMediaSingeImageModel */,
+				B3935A551C4A6F8200975C40 /* IIMediaImagesModel */,
+				B3935A4A1C4A64E400975C40 /* IIMediaModel */,
+			);
+			name = JsonModeles;
+			sourceTree = "<group>";
+		};
+		B3935A4A1C4A64E400975C40 /* IIMediaModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A4B1C4A652800975C40 /* IIMediaModel.h */,
+				B3935A4C1C4A652800975C40 /* IIMediaModel.m */,
+			);
+			name = IIMediaModel;
+			sourceTree = "<group>";
+		};
+		B3935A511C4A6AB500975C40 /* IIModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A521C4A6AFA00975C40 /* IIModelManager.h */,
+				B3935A531C4A6AFA00975C40 /* IIModelManager.m */,
+			);
+			name = IIModelManager;
+			sourceTree = "<group>";
+		};
+		B3935A551C4A6F8200975C40 /* IIMediaImagesModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A561C4A6FA200975C40 /* IIMediaImagesModel.h */,
+				B3935A571C4A6FA200975C40 /* IIMediaImagesModel.m */,
+			);
+			name = IIMediaImagesModel;
+			sourceTree = "<group>";
+		};
+		B3935A5D1C4A70A800975C40 /* IIMediaSingeImageModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A5E1C4A70CC00975C40 /* IIMediaSingeImageModel.h */,
+				B3935A5F1C4A70CC00975C40 /* IIMediaSingeImageModel.m */,
+			);
+			name = IIMediaSingeImageModel;
+			sourceTree = "<group>";
+		};
+		B3935A611C4A88C900975C40 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A621C4A88D800975C40 /* IIlnstagramFlowLayout */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		B3935A621C4A88D800975C40 /* IIlnstagramFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B3935A631C4A95FA00975C40 /* IIlnstagramFlowLayout.h */,
+				B3935A641C4A95FA00975C40 /* IIlnstagramFlowLayout.m */,
+			);
+			name = IIlnstagramFlowLayout;
+			sourceTree = "<group>";
+		};
+		B3C110461C4DAE9700B145FA /* IIAutocompleteManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3C110471C4DAEB800B145FA /* IIAutocompleteManager.h */,
+				B3C110481C4DAEB800B145FA /* IIAutocompleteManager.m */,
+			);
+			name = IIAutocompleteManager;
+			sourceTree = "<group>";
+		};
+		B3C1104A1C4DB32900B145FA /* IIUserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3C1104B1C4DB34100B145FA /* IIUserDefaultsManager.h */,
+				B3C1104C1C4DB34100B145FA /* IIUserDefaultsManager.m */,
+			);
+			name = IIUserDefaultsManager;
 			sourceTree = "<group>";
 		};
 		B3E9C22A1C493827007D7A8F = {
@@ -82,10 +312,13 @@
 		B3E9C2351C493827007D7A8F /* InstaImages */ = {
 			isa = PBXGroup;
 			children = (
+				B3935A491C4A64DC00975C40 /* JsonModeles */,
+				B31024381C49473800DCB9A2 /* Managers */,
+				B31024341C49472000DCB9A2 /* ViewControllers */,
+				B3935A3D1C497D0A00975C40 /* Views */,
+				B3935A611C4A88C900975C40 /* Layouts */,
 				B3E9C2391C493827007D7A8F /* AppDelegate.h */,
 				B3E9C23A1C493827007D7A8F /* AppDelegate.m */,
-				B3E9C23C1C493827007D7A8F /* ViewController.h */,
-				B3E9C23D1C493827007D7A8F /* ViewController.m */,
 				B3E9C23F1C493827007D7A8F /* Main.storyboard */,
 				B3E9C2421C493827007D7A8F /* Assets.xcassets */,
 				B3E9C2441C493827007D7A8F /* LaunchScreen.storyboard */,
@@ -98,7 +331,8 @@
 		B3E9C2361C493827007D7A8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3E9C2371C493827007D7A8F /* main.m */,
+				B3385F5C1C4EE6BD0074B3F8 /* main.m */,
+				B3385F5B1C4EE65B0074B3F8 /* IIError */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,8 +397,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31024411C49490F00DCB9A2 /* Assets.xcassets in Resources */,
 				B3E9C2461C493827007D7A8F /* LaunchScreen.storyboard in Resources */,
-				B3E9C2431C493827007D7A8F /* Assets.xcassets in Resources */,
 				B3E9C2411C493827007D7A8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +458,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E9C23E1C493827007D7A8F /* ViewController.m in Sources */,
+				B3935A4D1C4A652800975C40 /* IIMediaModel.m in Sources */,
+				B3935A541C4A6AFA00975C40 /* IIModelManager.m in Sources */,
+				B3935A3C1C4975B900975C40 /* IIGalleryViewController.m in Sources */,
+				B38B8D561C4F10070014FBD4 /* IIUserRelationshipModel.m in Sources */,
+				B3935A651C4A95FA00975C40 /* IIlnstagramFlowLayout.m in Sources */,
+				B3385F601C4EE6C60074B3F8 /* IIError.m in Sources */,
+				B3935A501C4A6AA400975C40 /* IIServerManager.m in Sources */,
+				B3C110491C4DAEB800B145FA /* IIAutocompleteManager.m in Sources */,
+				B3935A481C498BDB00975C40 /* IIGalleryCollectionViewCell.m in Sources */,
+				B3935A581C4A6FA200975C40 /* IIMediaImagesModel.m in Sources */,
+				B3935A381C49520D00975C40 /* IIAuthViewController.m in Sources */,
+				B3385F641C4EEE680074B3F8 /* IIUserModel.m in Sources */,
+				B3385F531C4EDEE30074B3F8 /* IIBaseViewController.m in Sources */,
+				B3935A601C4A70CC00975C40 /* IIMediaSingeImageModel.m in Sources */,
 				B3E9C23B1C493827007D7A8F /* AppDelegate.m in Sources */,
-				B3E9C2381C493827007D7A8F /* main.m in Sources */,
+				B3385F5D1C4EE6BD0074B3F8 /* main.m in Sources */,
+				B3C1104D1C4DB34100B145FA /* IIUserDefaultsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +585,10 @@
 			baseConfigurationReference = A8D68B19882166D8BBBED483 /* Pods-InstaImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InstaImages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gumo.InstaImages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,7 +600,10 @@
 			baseConfigurationReference = 342145EE6143AFF5829A672E /* Pods-InstaImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InstaImages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gumo.InstaImages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
