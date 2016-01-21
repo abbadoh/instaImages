@@ -6,7 +6,6 @@
 //  Copyright © 2016 Gumo. All rights reserved.
 //
 
-#import "SimpleAuth.h"
 #import "IIModelManager.h"
 #import "IIAutocompleteManager.h"
 #import "IIUserDefaultsManager.h"
